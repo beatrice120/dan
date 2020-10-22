@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cb273d957a.js" crossorigin="anonymous"></script>
+     <title>Document</title>
+    
+
+<style type="text/css">
+
+
+ 
+ *{
+
+     padding: 0;
+     margin: 0;
+     color: #454545;
+
+ }
+ h1{
+     width: 3%;
+     position: relative;
+     top: 60px;
+     left: 90%;
+     cursor: pointer;
+
+ }
+ h2{
+     font-size: 15px;
+     color: darkred;
+     display: block;
+     border: 1p solid #ccc;
+     margin: 0 0 10px 0;
+     padding: 0 0 5px;
+
+
+ }
+ h1::before{
+     content: attr(data-count);
+     position:absolute;
+     color: white;
+     right: 16px;
+     font-size: 15px;
+     text-align: center;
+     top: -12px;
+     width: 20px;
+     height: 20px;
+     background: darkred;
+     border-radius: 50%;
+     opacity: 0;
+
+ }
+ h1.zero::before{
+     opacity: 1;
+ }
+ 
+ section{
+     width: 90%;
+     height: 400px;
+     display: flex;
+     justify-content: space-around;
+     margin: 100px auto;
+ }
+
+section div{
+    width: 22%;
+    height:93% ;
+    background: #f5f5f5;
+    padding: 1%;
+    position: relative;
+}
+img{
+
+    width: 200px;
+    height: 106px;
+}
+
+p{
+    margin: 5px;
+
+
+
+}
+h6{
+width: 50px;
+padding: 50px;
+margin: 10px;
+font-size: 15px;
+
+
+}
+button{
+
+padding: 5px;
+background: darkred;
+border: none;
+outline: none;
+font-weight: bold;
+color: #fafafa;
+cursor: pointer;
+
+
+}
+
+section div span{
+    position: absolute;
+    top: 14px;
+    left: 13px;
+    background: darkred;
+    width: 300px;
+    height: 186px;
+    display: none;
+}
+section div span img{
+width: 100%;
+height: 100%;
+
+
+
+}
+
+.select{
+    width: 60%;
+    height: 580px;
+    background: grey;
+    position: absolute;
+    top: -1000px;
+    left: 20%;
+    transition:0.5s;
+    overflow-y: auto;
+    margin: auto;
+
+}
+.select.display{
+    top: 10px;
+}
+.select div{
+
+    width:100%;
+    height: 200px;
+    display: flex;
+    padding: 5px;
+    border: 1px solid white;
+    position: relative;
+    margin: 5px auto;
+}
+.select div img{
+    width: 300px;
+    height: 100%;
+}
+.select div p{
+
+    padding: 35px;
+    color: white;
+
+}
+.select div h6,
+.select div button{
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    color: white;
+
+}
+.select div button{
+   
+    left: 60%;
+    top: 55%;
+   
+
+}
+.select div span{
+   display: none;
+   
+  
+
+}
+
+.footer-wrapper{
+    width: 1100px;
+    margin: 0 auto;
+    
+    
+    }
+    .single-footer{
+        width: 33%;
+        float:left;
+        text-align: left;
+        color: #fff;
+    
+    }
+    .single-footer ul{
+        margin: 0 auto;
+        padding: 0 auto;
+        list-style: none;
+    }
+    
+    .single-footer ul a{
+    
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        font-size:12px;
+    }
+    .single-footer p{
+        width: 70%;
+    
+    }
+    footer{
+        width: 100%;
+        height: 250px;
+        position: 0;
+        bottom: 0;
+        z-index: -1;
+        background-color: black;
+    }
+    .sec{
+        background-color: darkred;
+    }
+ 
+ </style>
+ 
+
+</head>
+<body>
+
+
+   
+ <br><br><br><br><br><br><br><br>
+
+     <br><br>
+
+  <h1><i class="fas fa-cart-plus"></i></h1>
+
+<section>
+
+<div> 
+<img src="https://i0.wp.com/durbanhalaalmeats.co.za/wp-content/uploads/2013/10/beef-sausages-durban-halaal-meats.jpg" width="200"height="200">
+
+<h2>BEEF SAUSAGE</h2>
+
+<h6>1KG 2,000RWF</h6>
+<span></span>
+<button>Add-cart</button></div>
+
+<div><img src="https://roomservice247.co.za/wp-content/uploads/2020/03/Bacon-Streaky.jpg" width="200"height="200">
+   <h2>BACON</h2>
+   
+   
+    <h6>1KG 4,500RWF</h6>
+    <span></span>
+    <button>Add-cart</button>
+     </div>
+<div><img src="https://tendergourmetbutchery.com.au/wp-content/uploads/2017/11/Beef-Stroganoff-Strips.jpg" width="200"height="200">
+   <h2>BEEF ROAST STROGANOF</h2>
+    
+    <h6>1KG 3,000RWF</h6>
+    <span></span>
+    <button>Add-cart</button>
+     </div>
+<div><img src="https://cdn.shopify.com/s/files/1/0757/1053/products/ahdb-beef-6894_1024x1024.jpg?v=1507885979 "width="200" height="200">
+   <h2>BEEF SHIN</h2>
+   
+    <h6>1KG ,2,500RWF</h6>
+    <span></span>
+    <button>Add-cart</button>
+     </div>
+
+     <div><img src="https://embed.widencdn.net/img/beef/emmrvrbdsc/800x600px/Stew%20Meat_135A.psd?keep=c&u=7fueml" width="200" height="200">
+        <h2>BEEF STEW</h2>
+         
+         <h6>1KG 4,500RWF</h6>
+         <span></span>
+         <button>Add-cart</button>
+          </div>
+
+
+
+
+
+</section>
+
+<section>
+
+    <div>  
+    <img src="https://image.freepik.com/free-photo/beef-bone-marrow-white_87557-12626.jpg" width="200" height="200">
+    <h2>BONE MARROW MEAT</h2>
+    
+    <h6>1KG 6,000RWF</h6>
+    <span></span>
+    <button>Add-cart</button></div>
+    
+    <div><img src="https://i.pinimg.com/originals/46/1f/3f/461f3f817735d2750cabeaeb9d4b1075.jpg" width="200"height=200 width="200"height="200">
+       <h2>CHICKEN</h2>
+       
+       
+        <h6>1KG 5,000RWF</h6>
+        <span></span>
+        <button>Add-cart</button>
+         </div>
+    <div><img src="https://www.farmfreshsa.co.za/wp-content/uploads/2020/05/Premium-Boerewors.jpg" width="200"height=200>
+       <h2>BOERWORSE</h2>
+        
+        <h6>1KG 4,500RWF</h6>
+        <span></span>
+        <button>Add-cart</button>
+         </div>
+    <div><img src="https://thumbs.dreamstime.com/b/carne-fresca-cruda-de-la-hamburguesa-aislada-en-blanco-130307604.jpg" width="200"height=200>
+       <h2>BURGERS</h2>
+        
+        <h6>1KG 3,000RWF</h6>
+        <span></span>
+        <button>Add-cart</button>
+         </div>
+    
+         <div><img src="https://s3.envato.com/files/264147093/25946.jpg" width="200" height="200">
+            <h2>BEEF FILLET</h2>
+            
+             <h6>1KG 2,500RWF</h6>
+             <span></span>
+             <button>Add-cart</button>
+              </div>
+    
+    
+    
+    
+    
+    </section>
+
+
+
+
+
+
+<section>
+
+    <div>  
+    <img src="images/Rockfish.jpg" width="200" height="200">
+    <h2>Rockfish</h2>
+    
+    <h6>1KG 5,000RWF</h6>
+    <span></span>
+    <button>Add-cart</button></div>
+    
+    <div><img src="images/fos.jpeg" width="200"height=200 width="200"height="200">
+       <h2>Aussi Fish</h2>
+       
+       
+        <h6>1KG 5,000RWF</h6>
+        <span></span>
+        <button>Add-cart</button>
+         </div>
+    <div><img src="images/til.jpg">
+       <h2>Tillapia Fish</h2>
+        
+        <h6>1KG 4,500RWF</h6>
+        <span></span>
+        <button>Add-cart</button>
+         </div>
+    <div><img src="images/salmon.jpg" width="200"height=200>
+       <h2>Salmon Fish</h2>
+        
+        <h6>1KG 3,000RWF</h6>
+        <span></span>
+        <button>Add-cart</button>
+         </div>
+    
+         <div><img src="images/ocean.jpg" width="200" height="200">
+            <h2>BEEF FILLET</h2>
+             
+             <h6>1KG 2,500RWF</h6>
+             <span></span>
+             <button>Add-cart</button>
+              </div>
+    
+    
+    
+    
+    
+    </section>
+
+<div class="select">
+
+
+    </div>
+
+
+
+    <footer>   
+
+        <div class="footer-wrapper">
+            <div class="single-footer">
+                <h2>Contact us:</h2>
+        <p4> Bshabani120@daviscollege.com<br>
+        Tel:0781915357<br>
+         <p4> DDufitimana220@daviscollege.com<br>
+            Tel:07847422054
+        
+        </p4>
+            </div>
+            <div class="single-footer">
+                <h2>Navigation</h2>
+        <ul>
+            <li ><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="shopall.html">Shop</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                </ul><br><br><br>
+                <center> &copy; Copyright2020</center>
+        </div>
+        <div class="single-footer">
+            <h2>Get Help</h2>
+        <ul>
+        
+            <li> <a href="#">order status</a></li>
+            <li> <a href="#">DElivery</a></li>
+            <li> <a href="#">Refund</a></li>
+            <li> <a href="#">Payment option</a></li>
+        
+        </ul>
+        <br>
+        <br>
+       
+        </div>
+        </div>
+        
+        
+        </footer>
+        
+    
+    
+    
+    
+    
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+<script type="text/javascript">
+var noti = document.querySelector('h1');
+var select = document.querySelector('.select');
+var button = document.getElementsByTagName('button');
+for(but of button)
+{
+
+but.addEventListener('click',(e)=> {
+
+var add =Number(noti.getAttribute('data-count') || 0);
+noti.setAttribute('data-count',add +1);
+noti.classList.add('zero');
+
+var parent =e.target.parentNode;
+var clone =parent.cloneNode(true);
+select.appendChild(clone);
+clone.lastElementChild.innerText ="Buy-now";
+if(clone){
+noti.onclick =()=>{
+
+    select.classList.toggle('display');
+}
+
+
+}
+
+var image = e.target.parentNode.querySelector('img');
+var span = e.target.parentNode.querySelector('span');
+
+var s_image = image.cloneNode(false);
+span.appendChild(s_image);
+span.classList.add('active');
+setTimeout(()=>
+{
+    span.removeChild(s_image);
+    span.classList.remove('active');
+
+
+} ,500)
+
+
+
+})
+
+}
+
+</script>
